@@ -1,0 +1,290 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Figtree:ital,wght@0,300..900;1,300..900&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Inter:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Work+Sans:ital,wght@0,100..900;1,100..900&family=Young+Serif&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Work Sans";
+}
+
+.container {
+    width: 100%;
+}
+
+/* Mobile devices (portrait and landscape) */
+/* Styles for mobile devices */
+@media only screen and (max-width: 767px) {
+    .top {
+        height: 50vh;
+        width: 100%;
+        background-color: hsl(292, 42%, 14%);
+        background-image: url("./assests/images/background-pattern-mobile.svg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    .bottom {
+        background-color: hsl(275, 100%, 97%);
+        height: 100vh;
+        /* padding-bottom: 800px; */
+
+    }
+
+    .white-background {
+        width: 50%;
+        /* height: 100vh; */
+        background-color: white;
+        position: absolute;
+        top: 20%;
+        left: 25%;
+        padding: 30px;
+        border-radius: 10px;
+    }
+
+    .heading {
+        display: flex;
+        margin-bottom: 20px ;
+    }
+
+    .heading img {
+        width: 20%;
+    }
+
+    .heading h2 {
+        margin-left: 20px;
+        font-weight: 200;
+        color: hsl(292, 42%, 14%);
+        font-size: 40px;
+    }
+
+    .first-paragraph {
+        display: flex;
+        margin: 20px 0px;
+        color: hsl(292, 42%, 14%);
+    }
+
+    .first-paragraph table {
+        border-collapse: collapse;
+        width: 100%;
+    }
+
+    .first-paragraph td {
+        padding: 10px 0px;
+        color: hsl(292, 42%, 14%);
+    }
+
+    .first-paragraph tr {
+        padding: 10px;
+        text-align: left;
+        border: none;
+    }
+
+    .second-paragraph {
+        margin: 20px 0px;
+        color: hsl(292, 16%, 49%);
+        font-size: 16px;
+        line-height: 25px;
+    }
+
+    table {
+        border-collapse: collapse;
+        width: 100%;
+    }
+
+    td {
+        padding: 10px 0px;
+        color: hsl(292, 42%, 14%);
+    }
+
+    tr {
+        padding: 10px;
+        text-align: left;
+        border-top: 1px solid #ddd;
+    }
+}
+
+
+/* Tablet devices (portrait and landscape) */
+/* Styles for tablet devices */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .top {
+        height: 50vh;
+        width: 100%;
+        background-color: hsl(292, 42%, 14%);
+        background-image: url("./assests/images/background-pattern-desktop.svg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    .bottom {
+        background-color: hsl(275, 100%, 97%);
+        height: 80vh;
+    }
+
+    .white-background {
+        width: 50%;
+        background-color: white;
+        position: absolute;
+        top: 30%;
+        left: 25%;
+        padding: 30px;
+        border-radius: 10px;
+    }
+
+    .heading {
+        display: flex;
+        margin: 20px 0px;
+    }
+
+    .heading h2 {
+        margin-left: 20px;
+        font-weight: 700;
+        color: hsl(292, 42%, 14%);
+        font-size: 40px;
+    }
+
+    .first-paragraph {
+        display: flex;
+        margin: 20px 0px;
+        color: hsl(292, 42%, 14%);
+    }
+
+    .first-paragraph table {
+        border-collapse: collapse;
+        width: 100%;
+    }
+
+    .first-paragraph td {
+        padding: 10px 0px;
+        color: hsl(292, 42%, 14%);
+    }
+
+    .first-paragraph tr {
+        padding: 10px;
+        text-align: left;
+        border: none;
+    }
+
+    .second-paragraph {
+        margin: 20px 0px;
+        color: hsl(292, 16%, 49%);
+        font-size: 16px;
+        line-height: 25px;
+    }
+
+    table {
+        border-collapse: collapse;
+        width: 100%;
+    }
+
+    td {
+        padding: 10px 0px;
+        color: hsl(292, 42%, 14%);
+    }
+
+    tr {
+        padding: 10px;
+        text-align: left;
+        border-top: 1px solid #ddd;
+    }
+}
+
+
+
+/* Laptop and desktop devices */
+/* Styles for laptop and desktop devices */
+@media only screen and (min-width: 992px) {
+
+    .top {
+        height: 50vh;
+        width: 100%;
+        background-color: hsl(292, 42%, 14%);
+        background-image: url("./assests/images/background-pattern-desktop.svg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    .bottom {
+        background-color: hsl(275, 100%, 97%);
+        height: 80vh;
+    }
+
+    .white-background {
+        width: 50%;
+        background-color: white;
+        position: absolute;
+        top: 30%;
+        left: 25%;
+        padding: 30px;
+        border-radius: 10px;
+    }
+
+    .heading {
+        display: flex;
+        margin: 20px 0px;
+    }
+
+    .heading h2 {
+        margin-left: 20px;
+        font-weight: 700;
+        color: hsl(292, 42%, 14%);
+        font-size: 40px;
+    }
+
+    .first-paragraph {
+        display: flex;
+        margin: 20px 0px;
+        color: hsl(292, 42%, 14%);
+    }
+
+    .first-paragraph table {
+        border-collapse: collapse;
+        width: 100%;
+    }
+
+    .first-paragraph td {
+        padding: 10px 0px;
+        color: hsl(292, 42%, 14%);
+    }
+
+    .first-paragraph tr {
+        padding: 10px;
+        text-align: left;
+        border: none;
+    }
+
+    .second-paragraph {
+        margin: 20px 0px;
+        color: hsl(292, 16%, 49%);
+        font-size: 16px;
+        line-height: 25px;
+    }
+
+    table {
+        border-collapse: collapse;
+        width: 100%;
+    }
+
+    td {
+        padding: 10px 0px;
+        color: hsl(292, 42%, 14%);
+    }
+
+    td:active {
+       cursor: pointer;
+       color: hsl(280, 33%, 63%);
+    }
+
+    tr {
+        padding: 10px;
+        text-align: left;
+        border-top: 1px solid #ddd;
+    }
+
+
+
+
+}
